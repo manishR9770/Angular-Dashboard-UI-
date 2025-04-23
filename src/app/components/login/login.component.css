@@ -1,0 +1,120 @@
+.login-wrapper {
+  display: flex;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Left panel */
+.left-panel {
+  flex: 1;
+  background: url(../../../assets/login-illustration.jpg) no-repeat center
+    center;
+  background-size: cover; /* 👈 ensures it covers the full div */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Right panel */
+.right-panel {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 80%;
+  max-width: 350px;
+}
+
+.back {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #333;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+}
+
+.signup-link {
+  color: #5e5ce6;
+  text-decoration: none;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 4px;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper .toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 35%;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #5e5ce6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #9fa8da;
+  cursor: not-allowed;
+}
+
+.forgot {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .login-wrapper {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    flex: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .left-panel img {
+    max-width: 200px;
+  }
+}

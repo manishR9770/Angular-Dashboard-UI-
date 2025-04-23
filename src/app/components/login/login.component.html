@@ -1,0 +1,50 @@
+<div class="login-wrapper">
+  <div class="left-panel"></div>
+
+  <div class="right-panel">
+    <div class="form-container">
+      <h2>Sign In</h2>
+      <p>
+        Don't have an account?
+        <a class="signup-link" href="#">Sign up here</a>
+      </p>
+
+      <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+        <label>Username *</label>
+        <input type="text" formControlName="username" placeholder="Username" />
+        <div
+          *ngIf="
+            loginForm.get('username')?.invalid &&
+            loginForm.get('username')?.touched
+          "
+          class="error"
+        >
+          Username is required
+        </div>
+
+        <label>Password *</label>
+        <div class="password-wrapper">
+          <input
+            type="password"
+            formControlName="password"
+            placeholder="Password"
+          />
+          <div
+            *ngIf="
+              loginForm.get('password')?.invalid &&
+              loginForm.get('password')?.touched
+            "
+            class="error"
+          >
+            Password is required
+          </div>
+        </div>
+
+        <button type="submit" [disabled]="loginForm.invalid">Login →</button>
+      </form>
+
+      <a href="#" class="forgot">Forgot Password?</a>
+      <div *ngIf="errorMsg" class="error">{{ errorMsg }}</div>
+    </div>
+  </div>
+</div>

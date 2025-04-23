@@ -1,0 +1,30 @@
+<div class="layout">
+  <app-sidebar></app-sidebar>
+  <div class="main">
+    <app-navbar></app-navbar>
+    <div class="content">
+      <div class="dashboard-header">
+        <div class="user-summary">
+          <img [src]="user?.image" alt="User" class="profile-image" />
+          <div class="user-details">
+            <h2>{{ user?.firstName }} {{ user?.lastName }}</h2>
+            <p>Welcome, here is a brief summary of your account.</p>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="btn deposit">Deposit Money</button>
+          <button class="btn withdraw">Withdraw Money</button>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">BTC: 0</div>
+        <div class="card">USD: 111.0302</div>
+        <div class="card">EUR: 1,638.99</div>
+        <div class="card">GBP: 19,847</div>
+        <div class="card">DOGE: 4.74192582</div>
+        <div class="card">LTC: 0.00228403</div>
+      </div>
+    </div>
+  </div>
+</div>
