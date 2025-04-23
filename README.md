@@ -66,5 +66,6 @@ For more information on using the Angular CLI, including detailed command refere
 
 ![Profile page](https://github.com/user-attachments/assets/e46337d9-455a-47b9-9d6e-bdc7111d9ea7)
 
-![Dashboard](https://github.com/user-attachments/assets/da0230ad-0ea5-4221-9524-4e0cec6a0b51)
+
+![Dashboard](https://github.com/user-attachments/assets/8d6d988d-99c1-4897-8ac7-cac253c51bb4)
 
